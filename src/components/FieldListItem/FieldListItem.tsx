@@ -9,17 +9,17 @@ type Props = {
 const FieldListItem = ({userItemList, setUserItemList}: Props) => {
   const addData = (item: Record<string, any>) => {
     item.userKey = "";
-    setUserItemList((prevUserItemList) => [...prevUserItemList, item]);
+    setUserItemList((prevUserItemList: any) => [...prevUserItemList, item]);
   };
   const removeData = (index: number) => {
-    setUserItemList((currentList) => {
+    setUserItemList((currentList: any) => {
       const temp = [...currentList];
       temp.splice(index, 1);
       return temp;
     })
   }
   const editUserKey = (index: number, newKey: string) => {
-    setUserItemList((prevList) => {
+    setUserItemList((prevList: any) => {
       const temp = [...prevList];
       temp[index].userKey = newKey
       return temp;
