@@ -1,4 +1,4 @@
-export const API = import.meta.env.DEV ? 'http://localhost:3000/api' : 'https://mock-data-api.onrender.com/api';
+export const API = import.meta.env.DEV ? 'http://localhost:3000/api/' : 'https://mock-data-api.onrender.com/api/';
 
 export const mq = {
   mobile: "458pt",
